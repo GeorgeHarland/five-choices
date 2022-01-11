@@ -1,0 +1,16 @@
+.intro {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.trioform {
+    text-align: center;
+    padding-top: 30px;
+}
+.choice {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
