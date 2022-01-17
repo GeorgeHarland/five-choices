@@ -11,21 +11,36 @@
     <p class='intro'>Pick one of the following:</p>
     <hr>
     <form action="" class="trioform">
-        <input type="button" class="choice" value="1" onclick="SelectFirst()">
-        <input type="button" class="choice" value="2" onclick="SelectSecond()">
-        <input type="button" class="choice" value="3" onclick="SelectThird()">
+        <input type="button" class="choice" id="b1" value="1" onclick="SelectFirst()">
+        <input type="button" class="choice" id="b2" value="2" onclick="SelectSecond()">
+        <input type="button" class="choice" id="b3" value="3" onclick="SelectThird()">
     </form>
     <p class='intro' id='picked'></p>
     <script>
         function SelectFirst() {
             document.getElementById("picked").innerHTML = "Button 1 selected.";
+            let firstpress = 1;
+            changeToSetTwo();
         }
         function SelectSecond() {
             document.getElementById("picked").innerHTML = "Button 2 selected.";
+            let firstpress = 2;
+            changeToSetTwo();
+
         }
         function SelectThird() {
             document.getElementById("picked").innerHTML = "Button 3 selected.";
+            let firstpress = 3;
+            changeToSetTwo();
+        }
+        function changeToSetTwo() {
+            document.querySelector("#b1").value = "a";
+            document.querySelector("#b2").value = "b";
+            document.querySelector("#b3").value = "c";
         }
     </script>
 </body>
 </html>
+
+<!-- need to make sure button sets variables once otherwise sets the next one -->
+<!-- then move js to its own file -->
